@@ -1,0 +1,132 @@
+:root{
+    --ff-primary: 'Poppins', sans-serif;
+    --fw-thin: 100;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --bg-primary: hsl(33, 100%, 75%);
+    /* --bg-secondary:hsl(136, 65%, 67%); */
+    --bg-secondary:hsl(101, 60%, 68%);
+    --bg-hover: hsl(136, 65%, 67%);
+    --cl-primary: hsl(36, 100%, 98%);
+    --cl-hover: hsl(238, 56%, 13%);
+    --btn-deleted: hsl(0, 59%, 47%);
+    }
+
+/*Reset de las propiedades por defecto del navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Estilos correspondientes al body*/
+body {
+    font-family: var(--ff-primary);
+    background-color: #f0f0f0;
+}
+
+/*Contenedor del formulario*/
+.container {
+    max-width: 600px;
+    margin: 50px  auto;
+    padding: 20px;
+    background-color: #fdf9f9;
+
+}
+
+/*Estilos del encabezado*/
+header h1 {
+    padding-inline: 20px;
+    text-align: center;
+    font-weight: var(--fw-bold);
+}
+
+/*Estilos del formulario de entrada*/
+form {
+    margin-bottom: 20px;
+}
+/*Contenedor de los label e input*/
+.taskForm__content-child{
+    height: auto;
+}
+
+/*Estilos de los hijos de taskForm__contentChild*/
+.taskForm__content-child label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+/*Estilos de los Input*/
+.taskForm__content-child input[type="text"],
+input[type="datetime-local"], button {
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+/*Contenedor del Button*/
+.container-btn {
+    background-color: azure;
+    margin-top: 20px;
+    height: auto;
+}
+/*Estilos correspondientes del botón Agregar Turno*/
+.container-btn button {
+    background-color: var(--bg-primary);
+    color: var(--cl-primary);
+    font-weight: var(--fw-medium);
+    font-size: 1rem;
+    border: none;
+
+    transition: all .4s linear;
+}
+
+/*Estilo hover del botón agregar*/
+.container-btn button:hover {
+background-color: var(--bg-hover);
+color: var(--cl-hover);
+font-weight: var(--fw-bold);
+}
+
+.completed {
+    text-decoration: line-through;
+  }
+  
+ aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 10px;
+ }
+  li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  li button {
+    flex: 1  0 0;
+  }
+ 
+  .button-edit {
+    background-color: var(--bg-secondary);
+  }
+  .button-delete{
+    background-color: var(--btn-deleted);
+  }
+
+  .button-edit, 
+  .button-delete {
+    border: none;
+    color: var(--cl-primary);
+  }

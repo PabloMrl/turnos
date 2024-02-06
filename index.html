@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&display=swap" rel="stylesheet">
+    <title>Recordatorio</title>
+</head>
+<body>
+    <header>
+        <h1>Recordatorio De Turnos</h1>
+    </header>
+    <section>
+        <div class="container">
+            <h2>Agendar turno</h2>
+            <form  id="taskForm">
+                <div class="taskForm__content-child">
+                    <label for="TaskInput">Ingrese un turno</label>
+                <input type="text" id="taskInput" placeholder="Ingresar turno">
+                </div>
+                <div class="taskForm__content-child">
+                    <label for="DataTime">Horario del turno</label>
+                <input type="datetime-local" id="taskDateTime">
+                </div>
+                <div class="container-btn">
+                    <button type="submit">Agregar Turno</button>
+                </div>
+            </form>
+        </div>
+        <aside>
+            <div class="subtitulo">
+                <h2>Turnos Pendientes</h2>
+            </div>
+            <div class="content-listTask">
+                <ul id="taskList"></ul>
+               
+            </div>
+        </aside>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
